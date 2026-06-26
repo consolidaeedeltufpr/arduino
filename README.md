@@ -1,6 +1,6 @@
 # 🎈 Controle de Altura de Bolinha com Controlador PI
 
-Este projeto implementa um **sistema de controle de altura** utilizando um **Arduino**, um **sensor ultrassônico**, um **ventilador DC** e um **controlador PI (Proporcional-Integral)** para manter uma bolinha de isopor suspensa ("flutuando") dentro de um tubo.
+Este projeto implementa um **sistema de controle de altura** utilizando um **Arduino**, um **sensor ultrassônico**, um **motor DC** e um **controlador PI (Proporcional-Integral)** para manter uma bolinha de isopor suspensa ("flutuando") dentro de um tubo.
 
 O sistema é um excelente exemplo de aplicação prática de **Controle Automático**, **Eletrônica de Potência** e **Sistemas Embarcados**.
 
@@ -59,7 +59,7 @@ Alterando o tempo em que o sinal permanece ligado (Duty Cycle), obtém-se uma ve
 
 ## ⚡ Acionamento do Motor
 
-O ventilador consome mais corrente do que o Arduino consegue fornecer diretamente.
+O motor DC(15V) consome mais corrente do que o Arduino consegue fornecer diretamente.
 
 Por isso é utilizado um **MOSFET**, que funciona como uma chave eletrônica.
 
@@ -102,7 +102,8 @@ Esses dados podem ser visualizados pelo **Serial Plotter** da IDE do Arduino ou 
 
 - Arduino
 - Sensor Ultrassônico (HC-SR04)
-- Ventilador DC
+- Motor DC
+- Ventoinha
 - MOSFET
 - Fonte de alimentação
 - Tubo vertical
